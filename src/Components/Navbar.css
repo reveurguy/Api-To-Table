@@ -1,0 +1,16 @@
+#nav {
+    padding: 0px 50px;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0px 0px 45px 3px rgba(0, 0, 0, 0.15);
+}
+
+h1 {
+    cursor: pointer;
+}
+
+img {
+    align-self: center;
+    cursor: pointer;
+}

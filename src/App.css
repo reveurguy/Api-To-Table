@@ -1,0 +1,229 @@
+table {
+  border-spacing: 0;
+  border: 1px solid #ededed;
+}
+
+.box {
+  display: flex;
+  border-radius: 20px;
+  flex-direction: column;
+  padding: 30px;
+  box-shadow: 0px 0px 45px 3px rgba(0, 0, 0, 0.15);
+}
+
+#tint {
+  background-color: #dbe9fe;
+}
+
+table tr:last-child td {
+  border-bottom: 0;
+}
+
+table th,
+table td {
+  margin: 0;
+  padding: 0.7rem;
+  border-bottom: 1px solid #ededed;
+  border-right: 1px solid #ededed;
+  position: relative;
+}
+
+table th:last-child,
+table td:last-child {
+  border-right: 0;
+}
+
+table tr:nth-child(even) {
+  background-color: #fafafa;
+}
+
+table th::before {
+  position: absolute;
+  right: 15px;
+  top: 16px;
+  content: "";
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+}
+
+table th.sort-asc::before {
+  border-bottom: 5px solid #22543d;
+}
+
+table th.sort-desc::before {
+  border-top: 5px solid #22543d;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+}
+
+.active {
+  background-color: #9ae6b4;
+  color: #22543d;
+  margin-right: 4px;
+  padding: 4px 8px;
+  border-radius: 12px;
+  font-size: 12px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.pending {
+  background-color: #fbd38d;
+  color: #9c4221;
+  margin-right: 4px;
+  padding: 4px 8px;
+  border-radius: 12px;
+  font-size: 12px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.blocked {
+  background-color: #f74c59;
+  color: white;
+  margin-right: 4px;
+  padding: 4px 8px;
+  border-radius: 12px;
+  font-size: 12px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.idle {
+  background-color: #a9a9a96e;
+  color: #4c4b4b;
+  margin-right: 4px;
+  padding: 4px 8px;
+  border-radius: 12px;
+  font-size: 12px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+input::-webkit-input-placeholder {
+  color: rgb(148, 147, 147);
+}
+
+input,
+select {
+  width: 65%;
+  padding: 10px;
+  margin-bottom: 20px;
+  font-size: 15px;
+  font-weight: 600;
+  text-transform: capitalize;
+  border-radius: 5px;
+  color: rgb(148, 147, 147);
+  border: 2px solid #ddd;
+  box-shadow: 0px 0px 15px 0px rgb(0 0 0 / 15%);
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+select {
+  cursor: pointer;
+}
+
+#count {
+  padding: 20px;
+  font-size: 20px;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+}
+
+label {
+  margin-bottom: 10px;
+  font-weight: 700;
+  color: slategray;
+}
+
+.row div {
+  display: grid;
+  width: 100%;
+}
+
+#btn {
+  background-color: rgb(220 232 254 / 70%);
+  outline: none;
+  border: 2px solid rgba(0, 68, 255, 0.2);
+  border-radius: 6px;
+  padding: 0 7px;
+  font-size: 30px;
+  font-weight: 900;
+  margin: 0 5px 0 0;
+}
+
+#btn:hover {
+  color: rgba(0, 68, 255, 0.6);
+  font-weight: 900;
+  border: 2px solid rgba(0, 68, 255, 0.6);
+  cursor: pointer;
+  box-shadow: 0px 0px 15px 3px rgba(0, 68, 255, 0.2);
+}
+
+.pagination {
+  padding: 20px 20px 0 20px;
+  display: flex;
+  justify-content: flex-end;
+
+}
+
+input:hover,
+input:active,
+input:focus,
+input:focus-visible,
+select:focus-visible {
+  border: 2px solid lightskyblue;
+  outline: none;
+}
+
+.users {
+  margin-bottom: 40px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.users h2 {
+  margin-top: 0;
+}
+
+#reset {
+  appearance: button;
+  background-color: cornflowerblue;
+  border-radius: 6px;
+  border-width: 0;
+  box-shadow: rgba(50, 50, 93, .1) 0 0 0 1px inset, rgba(50, 50, 93, .1) 0 2px 5px 0, rgba(0, 0, 0, .07) 0 1px 1px 0;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  height: 44px;
+  font-size: 20px;
+  font-weight: 700;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  outline: none;
+  overflow: hidden;
+  padding: 0 25px;
+  position: relative;
+  text-align: center;
+  text-transform: none;
+  transform: translateZ(0);
+  transition: all .2s, box-shadow .08s ease-in;
+  touch-action: manipulation;
+
+}
+
+#reset:disabled {
+  cursor: default;
+}
+
+#reset:hover {
+  box-shadow: rgba(50, 50, 93, .1) 0 0 0 1px inset, rgba(50, 50, 93, .2) 0 6px 15px 0, rgba(0, 0, 0, .1) 0 2px 2px 0, rgba(50, 151, 211, .3) 0 0 5px 4px;
+}
