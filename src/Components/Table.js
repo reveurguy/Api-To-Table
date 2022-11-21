@@ -37,7 +37,7 @@ export default function Table({ columns, data, setData }) {
     {
       data,
       columns,
-      initialState: { pageIndex: 1}
+      initialState: { pageIndex: 0}
     },
     useFilters,
     useSortBy,
