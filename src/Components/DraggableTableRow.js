@@ -9,7 +9,7 @@ const DraggingRow = styled.td`
 `;
 
 const TableData = styled.td`
-  background: white;
+
 `;
 
 export const DraggableTableRow = ({ row }) => {

@@ -1,7 +1,7 @@
 import React, { useMemo, useState, useEffect } from "react";
 import axios from "axios";
 
-import Table from "./Components/Table";
+import TableData from "./Components/Table";
 import "./App.css";
 import Nav from "./Components/Navbar";
 
@@ -73,7 +73,7 @@ function App() {
       <Nav />
       <div className="App">
         <div className="box">
-          <Table columns={columns} data={data} setData={setData} />
+          <TableData columns={columns} data={data} setData={setData} />
         </div>
       </div>
     </div>
